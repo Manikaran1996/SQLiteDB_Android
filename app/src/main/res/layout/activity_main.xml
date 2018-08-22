@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mk.databasedemo.MainActivity">
+
+    <TextView
+        android:id="@+id/task_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <EditText
+        android:id="@+id/task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="10"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/task_name_label"
+        app:layout_constraintLeft_toLeftOf="@+id/task_name_label"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/details_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/task_name"
+        app:layout_constraintLeft_toLeftOf="@id/task_name"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minEms="10"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/details_label"
+        app:layout_constraintLeft_toLeftOf="@+id/details_label"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:text="Add"
+        app:layout_constraintTop_toBottomOf="@id/details"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp" />
+
+</android.support.constraint.ConstraintLayout>
